@@ -16,19 +16,24 @@ This Task Management App allows users to manage tasks and tags effectively. User
 - **Edit Task**: Users can modify task names and add new tags.
 - **Remove Task**: Easily remove tasks with the click of a button.
 - **Active Task/Tags**: Activate tasks and individual tags by clicking the "Active" button.
+   ![Application Screenshot](Home.png)
+   ![Application Screenshot](Home(add%20task%20view).png)
 
 ### About View
 - Provides instructions about the app and related information.
+   ![Application Screenshot](About.png)
 
 ### Filter Tasks
 - **Filter by Time**: Users can filter tasks and tags based on a specific start and end time, showing all tasks that have been active during that interval.
 - **Total Active Time**: View total active time (in minutes) for individual tasks or tags within the selected observation interval.
+ ![Application Screenshot](Filtertask.png)
 
 ### Settings
 - **Choose Color**: Customize the UI by selecting your favorite color.
 - **Choose Mode**: 
   - **Default Mode**: Multiple tasks can be active at once.
   - **Alternative Mode**: Only one task can be active at a time.
+ ![Application Screenshot](Setting.png)
 
 ## Installation and Setup
 
