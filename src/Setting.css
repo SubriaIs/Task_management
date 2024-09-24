@@ -1,0 +1,10 @@
+@media (max-width: 500px) {
+
+.headingsetting{
+    font-size:15px;
+  }
+
+  label{
+    font-size:10px;
+  }
+}

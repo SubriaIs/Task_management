@@ -1,0 +1,79 @@
+{
+  "tasks": [
+    {
+      "id": 0,
+      "name": "Study",
+      "tags": [
+        {
+          "id": 0,
+          "status": "Deactive",
+          "name": "Groupwork"
+        },
+        {
+          "id": 1,
+          "status": "Deactive",
+          "name": "Assignments "
+        }
+      ],
+      "status": "Active"
+    },
+    {
+      "id": 1,
+      "name": "Shopping",
+      "tags": [
+        {
+          "id": 0,
+          "status": "Deactive",
+          "name": "Buy"
+        },
+        {
+          "id": 1,
+          "status": "Deactive",
+          "name": "Payment "
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Go To School",
+      "tags": [
+        {
+          "id": 0,
+          "status": "Deactive",
+          "name": "Groupwork"
+        },
+        {
+          "id": 1,
+          "status": "Deactive",
+          "name": "Travel"
+        },
+        {
+          "id": 2,
+          "status": "Deactive",
+          "name": "Read Books"
+        }
+      ],
+      "status": "Deactive"
+    }
+  ],
+  "timeintervals": [
+    {
+      "taskId": 0,
+      "tagId": 0,
+      "startTimeDate": "2023-11-02T00:19:58",
+      "endTimeDate": "2023-11-02T00:20:32",
+      "id": 1
+    },
+    {
+      "taskId": 2,
+      "tagId": 1,
+      "startTimeDate": "2023-11-02T00:20:41",
+      "endTimeDate": "2023-11-02T00:21:37",
+      "id": 2
+    }
+  ],
+  "profiles": {
+    "colorCode": "#c6e7e7",
+    "mode": "Alternative Mode"
+  }
+}

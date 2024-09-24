@@ -1,0 +1,16 @@
+
+
+.divpattern p{
+    font-size:17px  !important;
+}
+
+@media (max-width: 500px) {
+    .divpattern h1{
+        font-size:15px !important;
+    }
+
+    .divpattern p{
+    font-size:10px !important;
+}
+
+}

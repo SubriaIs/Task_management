@@ -1,0 +1,119 @@
+
+.btn {
+    appearance: none;
+      -webkit-appearance: none;
+    font-family: sans-serif;
+    cursor: pointer;
+    padding: 8px;
+    margin: 4px;
+    min-width: 60px;
+    border: 0px;
+      -webkit-transition: background-color 100ms linear;
+      -ms-transition: background-color 100ms linear;
+       transition: background-color 100ms linear;
+  }
+
+  .btn:focus, .btn.focus {
+    outline: 0;
+  }
+
+  .btn-round-1 {
+    border-radius: 4px;
+  }
+  .btn-margin {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+
+
+  .btn-dark {
+    background: #000;
+    color: #ffffff;
+  }
+
+  .btn-dark:hover {
+    background: #212121;
+    color: #ffffff;
+  }
+
+  .btn-light {
+    background: #ededed;
+    color: #000;
+  }
+
+  .btn-light:hover {
+    background: #dbdbdb;
+    color: #000;
+  }
+
+  .btn-primary {
+    background: #3498db;
+    color: #ffffff;
+  }
+
+  .btn-primary:hover {
+    background: #2980b9;
+    color: #ffffff;
+  }
+
+  .btn-success {
+    background: #2ecc71;
+    color: #ffffff;
+  }
+
+  .btn-success:hover {
+    background: #27ae60;
+    color: #ffffff;
+  }
+  .btn-danger {
+    background: #e74c3c;
+    color: #ffffff;
+  }
+
+  .btn-danger:hover {
+    background: #c0392b;
+    color: #ffffff;
+  }
+
+  .btn-warning {
+    background: #f1c40f;
+    color: #ffffff;
+  }
+
+  .btn-warning:hover {
+    background: #f39c12;
+    color: #ffffff;
+  }
+  button{
+    font-size:10px;
+  }
+
+  button:focus-visible {
+    font-size:10px;
+    /* remove default focus style */
+    outline: none;
+    /* custom focus styles */
+    box-shadow: 0 0 2px 2px #51a7e8;
+    color: rgb(23, 24, 23);
+  }
+
+  @media (max-width: 500px) {
+    .btn {
+      appearance: none;
+        -webkit-appearance: none;
+      font-family: sans-serif;
+      cursor: pointer;
+      padding: 8px;
+      margin: 4px;
+      min-width: 10px;
+      border: 0px;
+        -webkit-transition: background-color 100ms linear;
+        -ms-transition: background-color 100ms linear;
+         transition: background-color 100ms linear;
+    }
+
+    button{
+      font-size:10px;
+    }
+  }
