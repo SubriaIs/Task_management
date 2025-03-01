@@ -10,7 +10,7 @@ function About() {
 
   // fetch data for setting option
 function getAllProfiles(){
-  fetch ('http://localhost:3010/profiles/')
+  fetch ('http://5.231.25.145:3010/profiles/')// change the ip if needed
   .then(res => res.json())
   .then((data) => {
     setProfiles(data);

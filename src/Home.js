@@ -35,7 +35,7 @@ function Home() {
 
 // fetch data for setting option
 function getAllProfiles(){
-  fetch ('http://localhost:3010/profiles/')
+  fetch ('http://5.231.25.145:3010/profiles/')
   .then(res => res.json())
   .then((data) => {
     setProfiles(data);
@@ -48,7 +48,7 @@ function updateTaskTag(task,tagId){
 
   task.tags[tagId].status = "Deactive";
   let bodyPayload = JSON.stringify(task);
-  fetch('http://localhost:3010/tasks/'+task.id, {
+  fetch('http://5.231.25.145:3010/tasks/'+task.id, {
           method: 'PATCH',
           headers: {
             'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ function updateTaskTag(task,tagId){
   // update time
   function updateTimeInterval(task,tI){
     let bodyPayload = JSON.stringify(tI);
-    fetch('http://localhost:3010/timeintervals/'+tI.id, {
+    fetch('http://5.231.25.145:3010/timeintervals/'+tI.id, {
             method: 'PATCH',
             headers: {
               'Content-Type': 'application/json',
@@ -89,7 +89,7 @@ function updateTaskTag(task,tagId){
 
   // fetching data
   function getAllTasks(){
-    fetch ('http://localhost:3010/tasks/')
+    fetch ('http://5.231.25.145:3010/tasks/')
     .then(res => res.json())
     .then((data) => {
       setTaskArrays(data);
@@ -114,7 +114,7 @@ function updateTaskTag(task,tagId){
   }
 // fetching data for time
   function getAllTimeIntervals(){
-    fetch ('http://localhost:3010/timeintervals/')
+    fetch ('http://5.231.25.145:3010/timeintervals/')
     .then(res => res.json())
     .then((data) => setTimeintervals(data))
     .catch((error) => console.error('Error fetching intervals:', error));
@@ -188,7 +188,7 @@ function updateTaskTag(task,tagId){
     //Delect option
     const handleDeleteClick = (id,name) => {
       if (window.confirm('Are you sure you want to delete from database Task: '+name+' ?')) {
-        fetch('http://localhost:3010/tasks/'+id, { method: 'DELETE' })
+        fetch('http://5.231.25.145:3010/tasks/'+id, { method: 'DELETE' })
         .then((res) => {
           if(res.statusText === "OK" && res.status === 200){
             alert("Deleted Successfully!")
@@ -332,7 +332,7 @@ const EditTask=() =>{
 
     let bodyPayload= JSON.stringify(ntask);
 
-    fetch('http://localhost:3010/tasks/'+taskId, {
+    fetch('http://5.231.25.145:3010/tasks/'+taskId, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -406,7 +406,7 @@ const handleActiveDeactiveTags = (taskId, tagId, textStatus) => {
     let payBody = JSON.stringify(nTask);
 
     // First, update the tag's status
-    fetch('http://localhost:3010/tasks/'+taskId, {
+    fetch('http://5.231.25.145:3010/tasks/'+taskId, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -423,10 +423,10 @@ const handleActiveDeactiveTags = (taskId, tagId, textStatus) => {
             startTimeDate: '',
             endTimeDate: '',
           };
-          let url= 'http://localhost:3010/timeintervals/';
+          let url= 'http://5.231.25.145:3010/timeintervals/';
           if(payl != null){
             method2 = 'PATCH';
-            url = 'http://localhost:3010/timeintervals/'+payl.id;
+            url = 'http://5.231.25.145:3010/timeintervals/'+payl.id;
             ntag.startTimeDate = payl.startTimeDate;
             ntag.endTimeDate = payl.endTimeDate;
           }
@@ -579,7 +579,7 @@ const Time=() =>{
 
       let bodyPayload= JSON.stringify(ntask);
 
-      fetch('http://localhost:3010/tasks', {
+      fetch('http://5.231.25.145:3010/tasks', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

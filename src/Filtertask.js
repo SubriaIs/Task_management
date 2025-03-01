@@ -32,14 +32,14 @@ function Filtertask() {
 
   // fetch data
   function getAllTasks(){
-    fetch ('http://localhost:3010/tasks/')
+    fetch ('http://5.231.25.145:3010/tasks/') //change the ip or localhost if needed
     .then(res => res.json())
     .then((data) => setTaskArrays(data))
     .catch((error) => console.error('Error fetching tasks:', error));
   }
 // fetching data for time
   function getAllTimeIntervals(){
-    fetch ('http://localhost:3010/timeintervals/')
+    fetch ('http://5.231.25.145:3010/timeintervals/') //change the ip or localhost if needed
     .then(res => res.json())
     .then((data) => setTaskTimeIntervals(data))
     .catch((error) => console.error('Error fetching intervals:', error));
@@ -47,7 +47,7 @@ function Filtertask() {
 
 // fetch data for setting option
 function getAllProfiles(){
-  fetch ('http://localhost:3010/profiles/')
+  fetch ('http://5.231.25.145:3010/profiles/') //change the ip or localhost if needed
   .then(res => res.json())
   .then((data) => {
     setProfiles(data);

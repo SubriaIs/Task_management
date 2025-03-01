@@ -26,7 +26,7 @@ function Settings () {
       }, []);
 
     function getAllProfiles(){
-    fetch ('http://localhost:3010/profiles/')
+    fetch ('http://5.231.25.145:3010/profiles/')
     .then(res => res.json())
     .then((data) => {
         setProfiles(data);
@@ -49,7 +49,7 @@ function Settings () {
             "colorCode": color,
             "mode": mode,
         })
-        fetch('http://localhost:3010/profiles/', {
+        fetch('http://5.231.25.145:3010/profiles/', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
