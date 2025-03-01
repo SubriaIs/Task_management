@@ -16,7 +16,7 @@ server.use(middlewares);
 // Set up the router to handle the db.json
 server.use(router);
 
-// Start the server on port 3010
-server.listen(3010, () => {
-  console.log('JSON Server is running on http://0.0.0.0:3010');
-});
+// Start the server on all available network interfaces
+server.listen(3010, '0.0.0.0', () => {
+    console.log('JSON Server is running on http://5.231.25.145:3010');
+  });
