@@ -7,7 +7,7 @@ const middlewares = jsonServer.defaults();
 // Enable CORS for specific origins or all
 server.use(cors({
   origin: '*',  // Allow all origins (you can restrict this to specific domains if needed)
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
 }));
 
 // Use default middlewares (for logging, static, etc.)
